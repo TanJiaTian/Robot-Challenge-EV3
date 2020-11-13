@@ -73,7 +73,7 @@ motor_right.wait_while('running')
 motor_left.wait_while('running')
 ev3.Sound.speak("Hello I am Karen I am the only boss in Tick-Tack-Toe")
 sleep(8)
-
+#insallah
 
 
 

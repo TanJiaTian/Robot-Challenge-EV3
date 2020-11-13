@@ -7,67 +7,67 @@ from time import sleep
 motor_right = ev3.LargeMotor('outC')
 motor_left = ev3.LargeMotor('outB')
 # move motor on both sides for 1500ms with 500deg/sec
-motor_left.run_timed(time_sp=1500, speed_sp=500)
-motor_right.run_timed(time_sp=1500, speed_sp=500)
+motor_left.run_timed(time_sp=1500, speed_sp=500, stop_action = "brake")
+motor_right.run_timed(time_sp=1500, speed_sp=500, stop_action = "brake")
 # wait till the motor has stopped
 motor_right.wait_while('running')
 motor_left.wait_while('running')
 # move motor right for 90 deg
-motor_right.run_timed(time_sp=3000, speed_sp=151.348)
+motor_right.run_timed(time_sp=3000, speed_sp=151.348, stop_action = "brake")
 # motor right stopped
 motor_right.wait_while('running')
 # move motor on both sides for 1500ms with 500deg/sec
-motor_left.run_timed(time_sp=1500, speed_sp=500)
-motor_right.run_timed(time_sp=1500, speed_sp=500)
+motor_left.run_timed(time_sp=1500, speed_sp=500, stop_action = "brake")
+motor_right.run_timed(time_sp=1500, speed_sp=500, stop_action = "brake")
 # wait till the motor has stopped
 motor_right.wait_while('running')
 motor_left.wait_while('running')
 # move motor right for 90 deg
-motor_left.run_timed(time_sp=3000, speed_sp=151.348)
+motor_left.run_timed(time_sp=3000, speed_sp=151.348, stop_action = "brake")
 # motor right stopped
 motor_left.wait_while('running')
 # move motor on both sides for 1500ms with 500deg/sec
-motor_left.run_timed(time_sp=3770, speed_sp=500)
-motor_right.run_timed(time_sp=3770, speed_sp=500)
+motor_left.run_timed(time_sp=3770, speed_sp=500, stop_action = "brake")
+motor_right.run_timed(time_sp=3770, speed_sp=500, stop_action = "brake")
 # wait till the motor has stopped
 motor_right.wait_while('running')
 motor_left.wait_while('running')
 # move motor right for 90 deg
-motor_left.run_timed(time_sp=3000, speed_sp=151.348)
+motor_left.run_timed(time_sp=3000, speed_sp=151.348, stop_action = "brake")
 # motor right stopped
 motor_left.wait_while('running')
 # move motor on both sides for 1500ms with 500deg/sec
-motor_left.run_timed(time_sp=3770, speed_sp=500)
-motor_right.run_timed(time_sp=3770, speed_sp=500)
+motor_left.run_timed(time_sp=3770, speed_sp=500, stop_action = "brake")
+motor_right.run_timed(time_sp=3770, speed_sp=500, stop_action = "brake")
 # wait till the motor has stopped
 motor_right.wait_while('running')
 motor_left.wait_while('running')
 # move motor right for 90 deg
-motor_left.run_timed(time_sp=3000, speed_sp=151.348)
+motor_left.run_timed(time_sp=3000, speed_sp=151.348, stop_action = "brake")
 # motor right stopped
 motor_left.wait_while('running')
 # move motor on both sides for 1500ms with 500deg/sec
-motor_left.run_timed(time_sp=3770, speed_sp=500)
-motor_right.run_timed(time_sp=3770, speed_sp=500)
+motor_left.run_timed(time_sp=3770, speed_sp=500, stop_action = "brake")
+motor_right.run_timed(time_sp=3770, speed_sp=500, stop_action = "brake")
 # wait till the motor has stopped
 motor_right.wait_while('running')
 motor_left.wait_while('running')
 # move motor right for 90 deg
-motor_left.run_timed(time_sp=3000, speed_sp=151.348)
+motor_left.run_timed(time_sp=3000, speed_sp=151.348, stop_action = "brake")
 # motor right stopped
 motor_left.wait_while('running')
-motor_left.run_timed(time_sp=1500, speed_sp=500)
-motor_right.run_timed(time_sp=1500, speed_sp=500)
+motor_left.run_timed(time_sp=1500, speed_sp=500, stop_action = "brake")
+motor_right.run_timed(time_sp=1500, speed_sp=500, stop_action = "brake")
 # wait till the motor has stopped
 motor_right.wait_while('running')
 motor_left.wait_while('running')
 # move motor right for 90 deg
-motor_right.run_timed(time_sp=3000, speed_sp=151.348)
+motor_right.run_timed(time_sp=3000, speed_sp=151.348, stop_action = "brake")
 # motor right stopped
 motor_right.wait_while('running')
 # move motor on both sides for 1500ms with 500deg/sec
-motor_left.run_timed(time_sp=1500, speed_sp=500)
-motor_right.run_timed(time_sp=1500, speed_sp=500)
+motor_left.run_timed(time_sp=1500, speed_sp=500, stop_action = "brake")
+motor_right.run_timed(time_sp=1500, speed_sp=500, stop_action = "brake"v)
 # wait till the motor has stopped
 motor_right.wait_while('running')
 motor_left.wait_while('running')

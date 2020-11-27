@@ -17,7 +17,7 @@ def grab_the_blocks():
         cl.mode = 'COL-COLOR'
         x = cl.value()
         if x == 1:
-            # move motor on both sides for 900ms with 500deg/sec
+            # move motor on both sides for 1100ms with 500deg/sec
             motor_left.run_timed(time_sp=1100, speed_sp=500, stop_action="brake")
             motor_right.run_timed(time_sp=1100, speed_sp=500, stop_action="brake")
             # wait till the motor has stopped
@@ -29,7 +29,7 @@ def grab_the_blocks():
             # wait till the motor has stopped
             motor_left.wait_while('running')
             motor_right.wait_while('running')
-            # move motor on both sides for 750ms with 500deg/sec
+            # move motor on both sides for 1100ms with 500deg/sec
             motor_left.run_timed(time_sp=1100, speed_sp=500, stop_action="brake")
             motor_right.run_timed(time_sp=1100, speed_sp=500, stop_action="brake")
             # wait till the motor has stopped
@@ -41,7 +41,7 @@ def grab_the_blocks():
             # wait till the motor has stopped
             motor_left.wait_while('running')
             motor_right.wait_while('running')
-            # move motor on both sides for 750ms with 500deg/sec
+            # move motor on both sides for 1100ms with 500deg/sec
             motor_left.run_timed(time_sp=1100, speed_sp=500, stop_action="brake")
             motor_right.run_timed(time_sp=1100, speed_sp=500, stop_action="brake")
             # wait till the motor has stopped
@@ -56,7 +56,7 @@ def grab_the_blocks():
             # wait till the motor has stopped
             motor_left.wait_while('running')
             motor_right.wait_while('running')
-            # move motor on both sides for 750ms with 500deg/sec
+            # move motor on both sides for 2200ms with 500deg/sec
             motor_left.run_timed(time_sp=2200, speed_sp=500, stop_action="brake")
             motor_right.run_timed(time_sp=2200, speed_sp=500, stop_action="brake")
             # wait till the motor has stopped
@@ -68,7 +68,7 @@ def grab_the_blocks():
             # wait till the motor has stopped
             motor_left.wait_while('running')
             motor_right.wait_while('running')
-            # move motor on both sides for 750ms with 500deg/sec
+            # move motor on both sides for 1100ms with 500deg/sec
             motor_left.run_timed(time_sp=1100, speed_sp=500, stop_action="brake")
             motor_right.run_timed(time_sp=1100, speed_sp=500, stop_action="brake")
             # wait till the motor has stopped
@@ -83,11 +83,12 @@ def grab_the_blocks():
             # release action
             motor_medium.run_timed(time_sp=3500, speed_sp=500, stop_action="brake")
             motor_medium.wait_while('running')
+            # sleep 2 seconds for new colour detection
             sleep(2)
 
 
         if x == 2:
-            # move motor on both sides for 750ms with 500deg/sec
+            # move motor on both sides for 2200ms with 500deg/sec
             motor_left.run_timed(time_sp=2200, speed_sp=500, stop_action="hold")
             motor_right.run_timed(time_sp=2200, speed_sp=500, stop_action="hold")
             # wait till the motor has stopped
@@ -96,7 +97,7 @@ def grab_the_blocks():
             # grab action
             motor_medium.run_timed(time_sp=3500, speed_sp=-1000, stop_action="brake")
             motor_medium.wait_while('running')
-            # move motor on both sides for 750ms with 500deg/sec
+            # move motor on both sides for 2200ms with -500deg/sec
             motor_left.run_timed(time_sp=2200, speed_sp=-500, stop_action="hold")
             motor_right.run_timed(time_sp=2200, speed_sp=-500, stop_action="hold")
             # wait till the motor has stopped
@@ -105,11 +106,12 @@ def grab_the_blocks():
             # release action
             motor_medium.run_timed(time_sp=3500, speed_sp=500, stop_action="brake")
             motor_medium.wait_while('running')
+            # sleep 2 seconds for new colour detection
             sleep(2)
 
 
         if x == 4:
-            # move motor on both sides for 750ms with 500deg/sec
+            # move motor on both sides for 1100ms with 500deg/sec
             motor_left.run_timed(time_sp=1100, speed_sp=500, stop_action="brake")
             motor_right.run_timed(time_sp=1100, speed_sp=500, stop_action="brake")
             # wait till the motor has stopped
@@ -121,7 +123,7 @@ def grab_the_blocks():
             # wait till the motor has stopped
             motor_left.wait_while('running')
             motor_right.wait_while('running')
-            # move motor on both sides for 750ms with 500deg/sec
+            # move motor on both sides for 1100ms with 500deg/sec
             motor_left.run_timed(time_sp=1100, speed_sp=500, stop_action="brake")
             motor_right.run_timed(time_sp=1100, speed_sp=500, stop_action="brake")
             # wait till the motor has stopped
@@ -133,7 +135,7 @@ def grab_the_blocks():
             # wait till the motor has stopped
             motor_left.wait_while('running')
             motor_right.wait_while('running')
-            # move motor on both sides for 750ms with 500deg/sec
+            # move motor on both sides for 1100ms with 500deg/sec
             motor_left.run_timed(time_sp=1100, speed_sp=500, stop_action="brake")
             motor_right.run_timed(time_sp=1100, speed_sp=500, stop_action="brake")
             # wait till the motor has stopped
@@ -148,7 +150,7 @@ def grab_the_blocks():
             # wait till the motor has stopped
             motor_left.wait_while('running')
             motor_right.wait_while('running')
-            # move motor on both sides for 750ms with 500deg/sec
+            # move motor on both sides for 2200ms with 500deg/sec
             motor_left.run_timed(time_sp=2200, speed_sp=500, stop_action="brake")
             motor_right.run_timed(time_sp=2200, speed_sp=500, stop_action="brake")
             # wait till the motor has stopped
@@ -160,7 +162,7 @@ def grab_the_blocks():
             # wait till the motor has stopped
             motor_left.wait_while('running')
             motor_right.wait_while('running')
-            # move motor on both sides for 750ms with 500deg/sec
+            # move motor on both sides for 1100ms with 500deg/sec
             motor_left.run_timed(time_sp=1100, speed_sp=500, stop_action="brake")
             motor_right.run_timed(time_sp=1100, speed_sp=500, stop_action="brake")
             # wait till the motor has stopped

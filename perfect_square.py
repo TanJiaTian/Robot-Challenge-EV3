@@ -2,7 +2,7 @@
 import ev3dev.ev3 as ev3
 from time import sleep
 # making a loop square (task 1)
-# Detecting colors
+# Defining motors and sensor(s)
 motor_left = ev3.LargeMotor('outA')
 motor_right = ev3.LargeMotor('outD')
 ts = ev3.TouchSensor()

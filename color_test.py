@@ -2,9 +2,10 @@
 import ev3dev.ev3 as ev3
 from time import sleep
 # Detecting colors
+# Defining motors
 motor_right = ev3.LargeMotor('outD')
 motor_left = ev3.LargeMotor('outA')
-# connect color sensor
+# connect color/touch sensors
 cl = ev3.ColorSensor()
 ts = ev3.TouchSensor()
 

@@ -203,8 +203,149 @@ def space1():
     rotate_90_reverse_right()
     reverse_to_adj()
     rotate_90_right_alt()
-    sleep(30) #sleep for next colour detection
+    sleep(30) 
+    
 
+ def space2():
+    #put block on 2   
+    rotate_180_right()
+    grab()
+    rotate_180_left()
+    straight_3_middle()
+    release()
+    reverse_3_middle()
+    sleep(30) 
+    
+    
+def space3():
+    #put block on 3
+    rotate_180_right()
+    grab()
+    rotate_180_left()
+    rotate_90_right_alt()
+    striaght_to_adj()
+    rotate_90_left()
+    straight_3_adj()
+    rotate_90_left()
+    release()
+    rotate_90_reverse_left()
+    reverse_3_adj()
+    rotate_90_reverse_left()
+    reverse_to_adj()
+    rotate_90_left_alt()
+    sleep(30)
+ 
 def space4():
-    #put block on 2
+    #put block on 4
+    rotate_180_right()
+    grab()
+    rotate_180_left()
+    rotate_90_left_alt()
+    striaght_to_adj()
+    rotate_90_right()
+    straight_2_adj()
+    rotate_90_right()
+    release()
+    rotate_90_reverse_right()
+    reverse_2_adj()
+    rotate_90_reverse_right()
+    reverse_to_adj()
+    rotate_90_right_alt()
+    sleep(30)
+    
+def space5():
+    #put block on 5
+    rotate_180_right()
+    grab()
+    rotate_180_left()
+    straight_2_middle()
+    release()
+    reverse_2_middle()
+    sleep(30)
+    
+def space6():
+    #put block on 6
+    rotate_180_right()
+    grab()
+    rotate_180_left()
+    rotate_90_right_alt()
+    striaght_to_adj()
+    rotate_90_left()
+    straight_2_adj()
+    rotate_90_left()
+    release()
+    rotate_90_reverse_left()
+    reverse_2_adj()
+    rotate_90_reverse_left()
+    reverse_to_adj()
+    rotate_90_left_alt()
+    sleep(30)
+    
+    
+def space4():
+    #put block on 4
+    rotate_180_right()
+    grab()
+    rotate_180_left()
+    rotate_90_left_alt()
+    striaght_to_adj()
+    rotate_90_right()
+    straight_2_adj()
+    rotate_90_right()
+    release()
+    rotate_90_reverse_right()
+    reverse_2_adj()
+    rotate_90_reverse_right()
+    reverse_to_adj()
+    rotate_90_right_alt()
+    sleep(30)
+    
+def space7():
+    #put block on 7
+    rotate_180_right()
+    grab()
+    rotate_180_left()
+    rotate_90_left_alt()
+    striaght_to_adj()
+    rotate_90_right()
+    straight_1_adj()
+    rotate_90_right()
+    release()
+    rotate_90_reverse_right()
+    reverse_1_adj()
+    rotate_90_reverse_right()
+    reverse_to_adj()
+    rotate_90_right_alt()
+    sleep(30) 
+    
+def space8():
+    #put block on 8
+    rotate_180_right()
+    grab()
+    rotate_180_left()
+    straight_1_middle()
+    release()
+    reverse_1_middle()
+    sleep(30)
+    
+def space9():
+    #put block on 9
+    rotate_180_right()
+    grab()
+    rotate_180_left()
+    rotate_90_right_alt()
+    striaght_to_adj()
+    rotate_90_left()
+    straight_1_adj()
+    rotate_90_left()
+    release()
+    rotate_90_reverse_left()
+    reverse_1_adj()
+    rotate_90_reverse_left()
+    reverse_to_adj()
+    rotate_90_left_alt()
+    sleep(30) 
+
+    
+   
     

@@ -281,25 +281,6 @@ def space6():
     rotate_90_left_alt()
     sleep(30)
     
-    
-def space4():
-    #put block on 4
-    rotate_180_right()
-    grab()
-    rotate_180_left()
-    rotate_90_left_alt()
-    striaght_to_adj()
-    rotate_90_right()
-    straight_2_adj()
-    rotate_90_right()
-    release()
-    rotate_90_reverse_right()
-    reverse_2_adj()
-    rotate_90_reverse_right()
-    reverse_to_adj()
-    rotate_90_right_alt()
-    sleep(30)
-    
 def space7():
     #put block on 7
     rotate_180_right()

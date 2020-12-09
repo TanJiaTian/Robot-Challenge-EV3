@@ -192,130 +192,160 @@ def release():
 
 
 def game():
-    for x in range(0,100):
-        cl.mode = 'COL-REFLECT'
-        x = cl.value()
-        # first column of playing field
-        if x == 1:
-            rotate_180_right()
-            grab()
-            rotate_180_left()
-            rotate_90_left_alt()
-            striaght_to_adj()
-            rotate_90_right()
-            straight_3_adj()
-            rotate_90_right()
-            release()
-            rotate_90_reverse_right()
-            reverse_3_adj()
-            rotate_90_reverse_right()
-            reverse_to_adj()
-            rotate_90_right_alt()
-            sleep(10) #sleep for next colour detection
-        if x == 4:
-            rotate_180_right()
-            grab()
-            rotate_180_left()
-            rotate_90_left_alt()
-            striaght_to_adj()
-            rotate_90_right()
-            straight_2_adj()
-            rotate_90_right()
-            release()
-            rotate_90_reverse_right()
-            reverse_2_adj()
-            rotate_90_reverse_right()
-            reverse_to_adj()
-            rotate_90_right_alt()
-            sleep(10) #sleep for next colour detection
-        if x == 7:
-            rotate_180_right()
-            grab()
-            rotate_180_left()
-            rotate_90_left_alt()
-            striaght_to_adj()
-            rotate_90_right()
-            straight_1_adj()
-            rotate_90_right()
-            release()
-            rotate_90_reverse_right()
-            reverse_1_adj()
-            rotate_90_reverse_right()
-            reverse_to_adj()
-            rotate_90_right_alt()
-            sleep(10)  # sleep for next colour detection
+    block = 0
+    count = 0
+    while ts.value() == 1: # ts.value = 1
+        for x in range(0,100):
+            cl.mode = 'COL-REFLECT'
+            x = cl.value()
+            # first column of playing field
+            if x == 7: # no colour
+                rotate_180_right()
+                grab()
+                rotate_180_left()
+                rotate_90_left_alt()
+                striaght_to_adj()
+                rotate_90_right()
+                straight_3_adj()
+                rotate_90_right()
+                release()
+                rotate_90_reverse_right()
+                reverse_3_adj()
+                rotate_90_reverse_right()
+                reverse_to_adj()
+                rotate_90_right_alt()
+                block += 1
+                count += 1
+                sleep(10) #sleep for next colour detection
+            if x == 2: # blue
+                rotate_180_right()
+                grab()
+                rotate_180_left()
+                rotate_90_left_alt()
+                striaght_to_adj()
+                rotate_90_right()
+                straight_2_adj()
+                rotate_90_right()
+                release()
+                rotate_90_reverse_right()
+                reverse_2_adj()
+                rotate_90_reverse_right()
+                reverse_to_adj()
+                rotate_90_right_alt()
+                sleep(10) #sleep for next colour detection
+                block += 1
+                count += 4
+            if x == 12 or x == 13: # red
+                rotate_180_right()
+                grab()
+                rotate_180_left()
+                rotate_90_left_alt()
+                striaght_to_adj()
+                rotate_90_right()
+                straight_1_adj()
+                rotate_90_right()
+                release()
+                rotate_90_reverse_right()
+                reverse_1_adj()
+                rotate_90_reverse_right()
+                reverse_to_adj()
+                rotate_90_right_alt()
+                sleep(10)  # sleep for next colour detection
+                block += 1
+                count += 7
 
-        # third column of playing field
-        if x == 3:
-            rotate_180_right()
-            grab()
-            rotate_180_left()
-            rotate_90_right_alt()
-            striaght_to_adj()
-            rotate_90_left()
-            straight_3_adj()
-            rotate_90_left()
-            release()
-            rotate_90_reverse_left()
-            reverse_3_adj()
-            rotate_90_reverse_left()
-            reverse_to_adj()
-            rotate_90_left_alt()
-            sleep(10) #sleep for next colour detection
-        if x == 6:
-            rotate_180_right()
-            grab()
-            rotate_180_left()
-            rotate_90_right_alt()
-            striaght_to_adj()
-            rotate_90_left()
-            straight_2_adj()
-            rotate_90_left()
-            release()
-            rotate_90_reverse_left()
-            reverse_2_adj()
-            rotate_90_reverse_left()
-            reverse_to_adj()
-            rotate_90_left_alt()
-            sleep(10) #sleep for next colour detection
-        if x == 9:
-            rotate_180_right()
-            grab()
-            rotate_180_left()
-            rotate_90_right_alt()
-            striaght_to_adj()
-            rotate_90_left()
-            straight_1_adj()
-            rotate_90_left()
-            release()
-            rotate_90_reverse_left()
-            reverse_1_adj()
-            rotate_90_reverse_left()
-            reverse_to_adj()
-            rotate_90_left_alt()
-            sleep(10) #sleep for next colour detection
+            # third column of playing field
+            if x == 5: # green
+                rotate_180_right()
+                grab()
+                rotate_180_left()
+                rotate_90_right_alt()
+                striaght_to_adj()
+                rotate_90_left()
+                straight_3_adj()
+                rotate_90_left()
+                release()
+                rotate_90_reverse_left()
+                reverse_3_adj()
+                rotate_90_reverse_left()
+                reverse_to_adj()
+                rotate_90_left_alt()
+                sleep(10) #sleep for next colour detection
+                block += 1
+                count += 3
+            if x == 9 or x == 10: # beige
+                rotate_180_right()
+                grab()
+                rotate_180_left()
+                rotate_90_right_alt()
+                striaght_to_adj()
+                rotate_90_left()
+                straight_2_adj()
+                rotate_90_left()
+                release()
+                rotate_90_reverse_left()
+                reverse_2_adj()
+                rotate_90_reverse_left()
+                reverse_to_adj()
+                rotate_90_left_alt()
+                sleep(10) #sleep for next colour detection
+                block += 1
+                count += 6
+            if x == 20 or x == 21: # white
+                rotate_180_right()
+                grab()
+                rotate_180_left()
+                rotate_90_right_alt()
+                striaght_to_adj()
+                rotate_90_left()
+                straight_1_adj()
+                rotate_90_left()
+                release()
+                rotate_90_reverse_left()
+                reverse_1_adj()
+                rotate_90_reverse_left()
+                reverse_to_adj()
+                rotate_90_left_alt()
+                sleep(10) #sleep for next colour detection
+                block += 1
+                count += 9
 
-        # second column of playing field
-        if x == 2:
-            rotate_180_right()
-            grab()
-            rotate_180_left()
-            straight_3_middle()
-            release()
-            reverse_3_middle()
-        if x == 5:
-            rotate_180_right()
-            grab()
-            rotate_180_left()
-            straight_2_middle()
-            release()
-            reverse_2_middle()
-        if x == 8:
-            rotate_180_right()
-            grab()
-            rotate_180_left()
-            straight_1_middle()
-            release()
-            reverse_1_middle()
+            # second column of playing field
+            if 22 <= x <= 25: # yellow
+                rotate_180_right()
+                grab()
+                rotate_180_left()
+                straight_3_middle()
+                release()
+                reverse_3_middle()
+                block += 1
+                count += 2
+            if x == 1 or x == 0: # black
+                rotate_180_right()
+                grab()
+                rotate_180_left()
+                straight_2_middle()
+                release()
+                reverse_2_middle()
+                block += 1
+                count += 5
+            if 15 <= x <= 19: # orange
+                rotate_180_right()
+                grab()
+                rotate_180_left()
+                straight_1_middle()
+                release()
+                reverse_1_middle()
+                block += 1
+                count += 8
+    if 16 <= count <= 29 and block == 4 or block == 5: # Tie case
+        ev3.Sound.speak("Tie")
+        sleep(1)
+    if 6 <= count <= 24 and block == 3:
+        ev3.Sound.speak("Karen has won the game") # Win case
+        sleep(10)
+    else:
+        ev3.Sound.speak("The opponent has won the game") # Lose case
+        sleep(10)
 
 game()

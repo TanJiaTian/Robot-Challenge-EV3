@@ -2134,4 +2134,22 @@ def game():
                     space4()
                 elif ob==[5,9,2,7]: #opp6 tie
                     space4()
+                elif ob==[2] or ob==[3] or ob==[4] or ob==[6] or ob==[7] or ob==[8] or ob==[9]: #strategy 2 (not in the midde)
+                    space5()
+                elif ob==[2,1] or ob==[6,9] or ob==[9,6] or ob==[2,6] or ob==[6,2] or ob==[2,9] or ob==[9,2] or ob==[6,1]:
+                    space3()
+                elif ob==[2,3] or ob==[3,2] or ob==[4,7] or ob==[7,4] or ob==[2,7] or ob==[7,2] or ob==[2,4] or ob==[4,2] or ob==[2,8] or ob==[8,2] or ob==[3,4] or ob==[4,3] or ob==[6,9] or ob==[9,6]:
+                    space1()
+                elif ob==[3,1] or ob==[5,1] or ob==[9,1] or ob==[8,1] or ob==[6,7] or ob==[7,6] or ob==[6,8] or ob==[8,6] or ob==[3,8] or ob==[8,3] or ob==[3,7] or ob==[7,3] or ob==[3,4] or ob==[4,3]:
+                    space2()
+                elif ob==[7,1]:
+                    space4()
+                elif ob==[3,9] or ob==[9,3]:
+                    space6()
+                elif ob==[8,9] or ob==[9,8] or ob==[4,1] or ob==[3,8] or ob==[8,3] or ob==[4,8] or ob==[8,4] or ob==[4,9] or ob==[9,4]:
+                    space7()
+                elif ob==[7,9] or ob==[9,7] or ob==[2,9] or ob==[9,2] or ob==[3,7] or ob==[7,3] or ob==[4,6] or ob==[6,4] or ob==[9,1]:
+                    space8()
+                elif ob==[3,6] or ob==[6,3] or ob==[7,8] or ob==[8,7] or ob==[6,7] or ob==[7,6] or ob==[6,8] or ob==[8,6]:
+                    space9()
            
